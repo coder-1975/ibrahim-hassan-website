@@ -19,6 +19,11 @@
     />
     <title>Ibrahim Hassan</title>
     <style>
+      .w-15{
+        min-width:15% !important;
+        max-width:15% !important;
+        width:15% !important;
+      }
       #bannar{
         height:480px;
         object-fit:cover;
@@ -27,10 +32,11 @@
     </style>
   </head>
   <body class="bg-dark">
-    <div class="container bg-dark text-white"">
+    <h1 class="text-center  mt-5  p-0 pt-5 bg-secondary  ps-0 pe-0 ms-0 me-0 w-100">IBRAHIM HASSAN</h1>
+    <img  src="static/bannar.jpg" id="bannar" alt="bannar" border="0" class="img-fluid">
+    <div class="container bg-dark text-white">
       {% include 'nav.html' %}
-      <h1 class="text-center  m-0 p-0  bg-secondary  ps-0 pe-0 ms-0 me-0 w-100">Ibrahim Hassan</h1>
-       <img  src="static/bannar.jpg" id="bannar" alt="bannar" border="0" class="img-fluid">
+     
         <h2 class="text-center mt-5 mb-2 pb-2 pt-5 text-secondary">About Me</h2>
       <hr class="mt-4 mb-4 bg-secondary"/>
         <p class="lead text-justify mt-5 mb-5">
@@ -39,7 +45,7 @@
            Using our text generator to create fancy text is really easy. All you have to do is paste your text into the text box at the top, scroll to find the style of text that you like, and click “Copy.” Then you can post the fancy font on your favorite social media platforms, such as Facebook, Twitter, or Instagram, or even text messages. Easily copy and paste fancy, elegant fonts.
         </p>
        <hr class="mt-4 mb-4 bg-secondary"/>
-        <h2 class="text-center mt-5 mb-0 pt-5 pb-0 text-secondary">Open Career</h2>
+        <h2 class="text-center mt-3 mb-0 pt-3 pb-0 text-secondary">Open Positions</h2>
         <div class="mb-4 mt-5 pt-2 pb-2">
          {% for job in jobs %}
            {% include 'jobitems.html' %}
